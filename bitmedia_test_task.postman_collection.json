@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "188d261c-35a1-458e-a9a8-7646d676ad1f",
+		"name": "bitmedia_test_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/users/5ed62b0653798d00faf75c21",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"5ed62b0653798d00faf75c21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/users/5ecfd9c9f784e040fec0fcab",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"5ecfd9c9f784e040fec0fcab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\"email\":\"Logan_Devonport3313@tonsy.org\",\n\"last_name\":\"Devonport\",\n\"country\":\"Oman\",\n\"city\":\"Madrid\",\n\"gender\":\"Male\",\n\"birth_date\":\"Friday, April 4, 8527 8:45 AM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\"email\":\"Logan_Devonport3313@tonsy.org\",\n\"last_name\":\"Zaporozhue\",\n\"country\":\"Oman\",\n\"city\":\"Madrid\",\n\"gender\":\"Male\",\n\"birth_date\":\"Friday, April 4, 8527 8:45 AM\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/users/5ed62b0653798d00faf75c21",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"5ed62b0653798d00faf75c21"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
